@@ -1,0 +1,19 @@
+{
+  "name": "dicoding",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "NODE_ENV=production node ./modulazion",
+    "dev": "concurrently \"NODE_ENV=development node ./modulazion\" \"node ./node-package-manager\" \"node ./events\""
+  },
+  "author": "Fahmi Muzakki",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.4.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "win-node-env": "^0.6.1"
+  }
+}
