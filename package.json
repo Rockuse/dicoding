@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "start": "NODE_ENV=production node ./modulazion",
-    "dev": "concurrently \"NODE_ENV=development node ./modulazion\" \"node ./node-package-manager\" \"node ./events\""
+    "start": "NODE_ENV=production nodemon server.js",
+    "dev": "concurrently \"NODE_ENV=development node ./src/modulazion\" \"node ./src/node-package-manager\" \"node ./src/events\""
   },
   "author": "Fahmi Muzakki",
   "license": "ISC",
@@ -14,6 +14,7 @@
     "concurrently": "^7.4.0",
     "lodash": "^4.17.21",
     "moment": "^2.29.4",
+    "nodemon": "^2.0.20",
     "win-node-env": "^0.6.1"
   }
 }
